@@ -20,11 +20,8 @@ pipeline {
         stage('Run') {
             steps {
                 sh '''
-<<<<<<< HEAD
                 ssh -i "~/.ssh/id_rsa" jenkins@34.133.117.182 << EOF
                 docker stop duotask
-=======
->>>>>>> 4456e9fd412dabd464e80faac22098fa9a1c54ee
                 docker rm duotask
                 docker rmi duotask
                 docker run -d -p 5500:5500 --name duotask simonwilmore/duotask:latest
