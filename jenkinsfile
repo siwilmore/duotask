@@ -22,7 +22,7 @@ pipeline {
                 sh '''
                 // docker stop duotask
                 // docker rm duotask
-                // docker rmi duotask
+                docker rmi duotask
                 docker run -d -p 5500:5500 --name duotask duotask
                 '''
             }
