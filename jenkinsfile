@@ -24,7 +24,7 @@ pipeline {
                 docker stop duotask
                 docker rm duotask
                 docker rmi duotask
-                docker run -d -p 5500:5500 --name duotask simonwilmore/duotask:latest
+                docker run -d -p 80:5500 --name duotask simonwilmore/duotask:latest
                 '''
             }
         }
