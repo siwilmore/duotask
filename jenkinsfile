@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh '''
                 docker build -t simonwilmore/duotask:latest -t simonwilmore/duotask:build-$BUILD_NUMBER .
+                
                 '''
             }
         }
